@@ -1,0 +1,52 @@
+{
+  "root": "apps/nodejs/card-deck-api",
+  "sourceRoot": "apps/nodejs/card-deck-api/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/node:webpack",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/nodejs/card-deck-api",
+        "main": "apps/nodejs/card-deck-api/src/main.js",
+        "tsConfig": "apps/nodejs/card-deck-api/tsconfig.app.json",
+        "assets": ["apps/nodejs/card-deck-api/src/assets"]
+      },
+      "configurations": {
+        "production": {
+          "optimization": true,
+          "extractLicenses": true,
+          "inspect": false,
+          "fileReplacements": [
+            {
+              "replace": "apps/nodejs/card-deck-api/src/environments/environment.js",
+              "with": "apps/nodejs/card-deck-api/src/environments/environment.prod.js"
+            }
+          ]
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/node:node",
+      "options": {
+        "buildTarget": "nodejs--card-deck-api:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/nodejs/card-deck-api/**/*.js"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/nodejs/card-deck-api"],
+      "options": {
+        "jestConfig": "apps/nodejs/card-deck-api/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": ["js api"]
+}

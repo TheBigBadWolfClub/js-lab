@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "nodejs--card-deck-api": "apps/nodejs/card-deck-api",
     "nodejs-riddles": "libs/nodejs/riddles"
   }
 }
