@@ -8,14 +8,26 @@
     "test": "nx test"
   },
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
   "devDependencies": {
     "@nrwl/cli": "14.0.2",
+    "@nrwl/eslint-plugin-nx": "14.0.2",
+    "@nrwl/jest": "14.0.2",
+    "@nrwl/linter": "14.0.2",
     "@nrwl/node": "^14.0.2",
     "@nrwl/nx-cloud": "latest",
     "@nrwl/workspace": "14.0.2",
+    "@swc/jest": "0.2.20",
+    "@typescript-eslint/eslint-plugin": "~5.18.0",
+    "@typescript-eslint/parser": "~5.18.0",
+    "eslint": "~8.12.0",
+    "eslint-config-prettier": "8.1.0",
+    "jest": "27.5.1",
     "nx": "14.0.2",
     "prettier": "^2.5.1",
+    "ts-jest": "27.1.4",
     "typescript": "~4.6.2"
   }
 }

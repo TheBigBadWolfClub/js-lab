@@ -1,0 +1,23 @@
+{
+  "root": "libs/nodejs/riddles",
+  "sourceRoot": "libs/nodejs/riddles/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/nodejs/riddles/**/*.js"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/nodejs/riddles"],
+      "options": {
+        "jestConfig": "libs/nodejs/riddles/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": ["js riddles"]
+}
