@@ -1,8 +1,10 @@
 {
   "version": 2,
   "projects": {
-    "nodejs--card-deck-api": "apps/nodejs/card-deck-api",
+    "nodejs-card-deck-api": "apps/nodejs/card-deck-api",
     "nodejs-riddles": "libs/nodejs/riddles",
+    "angular-angular-lab": "apps/angular/angular-lab",
+    "angular-angular-lab-e2e": "apps/angular/angular-lab-e2e",
     "angular-spells-playground": "libs/angular/spells/playground",
     "angular-spells-shared": "libs/angular/spells/shared",
     "angular-spells-card-deck-ui": "libs/angular/howls/card-deck-ui"
