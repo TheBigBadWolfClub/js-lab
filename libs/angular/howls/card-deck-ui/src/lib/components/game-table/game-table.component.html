@@ -1,0 +1,37 @@
+<div class="game-table">
+
+  <mat-card class="deal-type-bar">
+
+    <mat-button-toggle-group #group="matButtonToggleGroup"
+                             (change)="suitChange($event.value)">
+      <mat-button-toggle value="full" >
+        <mat-icon>speaker_group</mat-icon>
+      </mat-button-toggle>
+      <mat-button-toggle value="{{suitNames[HEARTS]}}" >
+        <mat-icon>favorite</mat-icon>
+      </mat-button-toggle>
+      <mat-button-toggle value="{{suitNames[SPADES]}}">
+        <mat-icon>expand_less</mat-icon>
+      </mat-button-toggle>
+      <mat-button-toggle value="{{suitNames[DIAMONDS]}}">
+        <mat-icon>diamond</mat-icon>
+      </mat-button-toggle>
+      <mat-button-toggle value="{{suitNames[CLUBS]}}" >
+        <mat-icon>filter-vintage</mat-icon>
+      </mat-button-toggle>
+    </mat-button-toggle-group>
+
+    <button mat-stroked-button color="accent" (click)="fullDeck()">fullDeck</button>
+    <button mat-stroked-button color="primary" (click)="fullDeck()">fullDeck</button>
+    <button mat-stroked-button (click)="fullDeck()">fullDeck</button>
+    <button mat-stroked-button color="warn" (click)="fullDeck()">fullDeck</button>
+  </mat-card>
+
+
+  <div fxFlex="row" class="deck">
+    <ng-template angdeckAddCard>
+    </ng-template>
+  </div>
+
+</div>
+

@@ -1,0 +1,17 @@
+<div class="game-table">
+  <mat-card class="deal-type-bar">
+    <button mat-stroked-button color="accent" (click)="delayEx()">delay</button>
+    <button mat-stroked-button color="primary" (click)="mergeMap()">mergeMap</button>
+    <button mat-stroked-button color="primary" (click)="mergeAll()">mergeAll</button>
+    <button mat-stroked-button color="primary" (click)="merge()">merge</button>
+    <button mat-stroked-button (click)="forkJoin()">forkJoin</button>
+    <button mat-stroked-button color="warn" (click)="combineLatest()">combineLatest</button>
+  </mat-card>
+
+  <div fxFlex="row" class="deck">
+    <ng-template gameAddCard>
+
+    </ng-template>
+  </div>
+
+</div>

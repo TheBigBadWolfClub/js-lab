@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/angular/howls/card-deck-ui",
+  "sourceRoot": "libs/angular/howls/card-deck-ui/src",
+  "prefix": "howls-card-deck-ui",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/angular-howls-card-deck-ui"],
+      "options": {
+        "jestConfig": "libs/angular/howls/card-deck-ui/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/angular/howls/card-deck-ui/src/**/*.ts",
+          "libs/angular/howls/card-deck-ui/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["angular lib card-deck-ui howls"]
+}

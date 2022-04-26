@@ -1,0 +1,31 @@
+
+
+.deal-type-bar {
+  margin: 2px 10px;
+  display: flex;
+  flex-flow: wrap row;
+  gap: 10px;
+  justify-content: space-evenly;
+  align-items: baseline;
+  align-content: space-around;
+}
+
+.deck {
+  padding: 20px 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: baseline;
+  align-content: space-around;
+  gap: 40px;
+}
+
+.sub-deck {
+  width: 40%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: baseline;
+  align-content: space-around;
+  gap: 10px;
+}

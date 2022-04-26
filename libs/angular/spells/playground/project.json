@@ -2,7 +2,7 @@
   "projectType": "library",
   "root": "libs/angular/spells/playground",
   "sourceRoot": "libs/angular/spells/playground/src",
-  "prefix": "angular-spells-playground",
+  "prefix": "spells-playground",
   "targets": {
     "build": {
       "executor": "@nrwl/angular:ng-packagr-lite",

@@ -4,6 +4,7 @@
     "nodejs--card-deck-api": "apps/nodejs/card-deck-api",
     "nodejs-riddles": "libs/nodejs/riddles",
     "angular-spells-playground": "libs/angular/spells/playground",
-    "angular-spells-shared": "libs/angular/spells/shared"
+    "angular-spells-shared": "libs/angular/spells/shared",
+    "angular-spells-card-deck-ui": "libs/angular/howls/card-deck-ui"
   }
 }

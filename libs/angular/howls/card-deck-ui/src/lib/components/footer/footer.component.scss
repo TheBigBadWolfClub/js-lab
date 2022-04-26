@@ -1,0 +1,35 @@
+.game-footer {
+  display: flex;
+  width: 100%;
+  margin: 5px 20px;
+
+  &__name {
+    display: flex;
+    width: 100%;
+    font-size: 1.2em;
+    justify-content: center;
+  }
+
+  &__date {
+    display: flex;
+    font-size: 0.7em;
+    position: absolute;
+  }
+}
+
+.game-footer-request {
+
+  display: flex;
+  font-size: 0.7em;
+  width: 100%;
+
+  &__request {
+    display: flex;
+    width: 35%;
+  }
+
+  &__result {
+    display: flex;
+    width: 60%;
+  }
+}

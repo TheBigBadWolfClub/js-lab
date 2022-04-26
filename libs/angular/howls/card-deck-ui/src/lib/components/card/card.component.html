@@ -1,0 +1,14 @@
+<div *ngIf="card ">
+  <mat-card class="card" >
+    <div class="suit-image top-left"
+         [ngClass]='card.suit.color'
+    >{{card.symbol}} {{card.suit.symbol}}</div>
+    <!--<div class="card-name">{{card.label}} of {{card.suit.label}}</div>-->
+    <div class="suit-image top-left" [ngClass]='card.suit.label'></div>
+    <div class="card-name" [ngClass]='card.suit.label'></div>
+    <div class="suit-image bottom-right"
+         [ngClass]='card.suit.color'
+    >{{card.symbol}} {{card.suit.symbol}}</div>
+  </mat-card>
+</div>
+

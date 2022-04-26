@@ -1,0 +1,15 @@
+<mat-toolbar>
+  <div class="game-footer" fxLayout="row" fxLayoutAlign="space-between center">
+    <span class="game-footer__name">Prove of Concepts &reg;</span>
+    <span class="game-footer__date">2021&copy;POC</span>
+  </div>
+</mat-toolbar>
+
+<mat-toolbar-row>
+  <div class="game-footer-request">
+    <span class="game-footer-request__request">{{logInDom.logHttp | async}}</span>
+    <span class="game-footer-request__result" *ngIf="(logInDom.log | async) !== null">
+      {{logInDom.log | async | json}}
+    </span>
+  </div>
+</mat-toolbar-row>

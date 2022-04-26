@@ -1,0 +1,39 @@
+.card {
+  width: 40px;
+  display: flex;
+  flex-flow: column;
+  font-size: 70%;
+}
+
+.card.mat-card {
+  padding: 7px;
+}
+
+.card-name {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  text-align: center;
+}
+
+.red {
+  color: red;
+}
+
+.black {
+  color: black;
+}
+
+.suit-image {
+
+  &.top-left {
+    top: 10px;
+    left: 10px;
+  }
+
+  &.bottom-right {
+    right: 10px;
+    bottom: 10px;
+    transform: rotate(180deg);
+  }
+}

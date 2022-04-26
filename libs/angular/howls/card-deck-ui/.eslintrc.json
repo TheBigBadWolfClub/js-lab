@@ -13,7 +13,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "spellsShared",
+            "prefix": "howlsCardDeckUI",
             "style": "camelCase"
           }
         ],
@@ -21,7 +21,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "spells-shared",
+            "prefix": "howls-card-deck-ui",
             "style": "kebab-case"
           }
         ]

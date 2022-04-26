@@ -2,7 +2,7 @@
   "projectType": "library",
   "root": "libs/angular/spells/shared",
   "sourceRoot": "libs/angular/spells/shared/src",
-  "prefix": "angular-spells-shared",
+  "prefix": "spells-shared",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",
