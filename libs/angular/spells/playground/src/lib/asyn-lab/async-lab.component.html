@@ -1,0 +1,19 @@
+<div class="game-table">
+
+  <mat-card class="game-table__action-bar">
+    <button mat-stroked-button color="accent" (click)="promise() ">Promise</button>
+    <button mat-stroked-button color="primary" (click)="promiseITer() ">promiseITer</button>
+    <button mat-stroked-button color="warn" (click)="test() ">Memoizer</button>
+    <button mat-stroked-button color="primary" (click)="action()">action</button>
+    <button mat-stroked-button (click)="action()">action</button>
+    <button mat-stroked-button color="warn" (click)="action()">action</button>
+  </mat-card>
+
+
+  <div fxFlex="row" class="deck">
+    <ng-template gameAddCard>
+    </ng-template>
+  </div>
+
+</div>
+

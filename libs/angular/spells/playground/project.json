@@ -1,0 +1,42 @@
+{
+  "projectType": "library",
+  "root": "libs/angular/spells/playground",
+  "sourceRoot": "libs/angular/spells/playground/src",
+  "prefix": "ang-playg",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["dist/libs/angular/spells/playground"],
+      "options": {
+        "project": "libs/angular/spells/playground/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/angular/spells/playground/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/angular/spells/playground/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/angular/spells/playground"],
+      "options": {
+        "jestConfig": "libs/angular/spells/playground/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/angular/spells/playground/src/**/*.ts",
+          "libs/angular/spells/playground/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

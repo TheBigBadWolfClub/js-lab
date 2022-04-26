@@ -1,0 +1,14 @@
+.game-parent {
+  display: flex;
+  flex-flow: column;
+}
+
+.game-parent-bar {
+  margin: 2px 10px;
+  display: flex;
+  flex-flow: wrap row;
+  gap: 10px;
+  justify-content: space-evenly;
+  align-items: baseline;
+  align-content: space-around;
+}

@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "nodejs--card-deck-api": "apps/nodejs/card-deck-api",
-    "nodejs-riddles": "libs/nodejs/riddles"
+    "nodejs-riddles": "libs/nodejs/riddles",
+    "angular-spells-playground": "libs/angular/spells/playground"
   }
 }

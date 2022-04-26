@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@js-lab/nodejs/riddles": ["libs/nodejs/riddles/src/index.js"]
+      "@js-lab/nodejs/riddles": ["libs/nodejs/riddles/src/index.js"],
+      "@js-lab/angular-spells-playground": ["libs/angular/spells/playground/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
