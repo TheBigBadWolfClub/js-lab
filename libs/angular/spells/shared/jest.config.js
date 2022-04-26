@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'angular-spells-playground',
+  displayName: 'angular-spells-shared',
   preset: '../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -8,7 +8,7 @@ module.exports = {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../../../coverage/libs/angular-spells-playground',
+  coverageDirectory: '../../../../coverage/libs/angular-spells-shared',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },

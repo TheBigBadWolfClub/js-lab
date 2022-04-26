@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/angular/spells/shared",
+  "sourceRoot": "libs/angular/spells/shared/src",
+  "prefix": "angular-spells-shared",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/angular-spells-shared"],
+      "options": {
+        "jestConfig": "libs/angular/spells/shared/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/angular/spells/shared/src/**/*.ts",
+          "libs/angular/spells/shared/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

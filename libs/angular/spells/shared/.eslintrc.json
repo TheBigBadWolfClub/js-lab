@@ -13,7 +13,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "angularSpellsPlayground",
+            "prefix": "angularSpellsShared",
             "style": "camelCase"
           }
         ],
@@ -21,7 +21,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "angular-spells-playground",
+            "prefix": "angular-spells-shared",
             "style": "kebab-case"
           }
         ]

@@ -2,11 +2,11 @@
   "projectType": "library",
   "root": "libs/angular/spells/playground",
   "sourceRoot": "libs/angular/spells/playground/src",
-  "prefix": "ang-playg",
+  "prefix": "angular-spells-playground",
   "targets": {
     "build": {
       "executor": "@nrwl/angular:ng-packagr-lite",
-      "outputs": ["dist/libs/angular/spells/playground"],
+      "outputs": ["dist/libs/angular-spells-playground"],
       "options": {
         "project": "libs/angular/spells/playground/ng-package.json"
       },
