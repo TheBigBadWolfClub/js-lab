@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'angular-spells-error-not-implemented',
+  selector: 'spells-shared-error-not-implemented',
   template: `
     <div class="error-page">
       <h3>not implemented</h3>

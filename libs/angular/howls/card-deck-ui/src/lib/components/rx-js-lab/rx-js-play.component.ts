@@ -4,7 +4,7 @@ import {AddCardDirective} from "../card/add-card.directive";
 import {DeckApiService} from "../../services/deck-api.service";
 import {Card, CLUBS, DIAMONDS, HEARTS, SPADES, suitNames} from "../../deck-model";
 import {CardComponent} from "../card/card.component";
-import {LogInDomService} from "@js-lab/ang-lab-common/lib/services/log-in-dom.service";
+import {LogInDomService} from "@js-lab/angular-spells-shared/lib/services/log-in-dom.service";
 
 
 
@@ -14,7 +14,7 @@ const throttleConfig = {
 }
 
 @Component({
-  selector: 'angdeck-deal',
+  selector: 'howls-card-deck-ui-deal',
   templateUrl: './rx-js-play.component.html',
   styleUrls: ['./rx-js-play.component.scss']
 })

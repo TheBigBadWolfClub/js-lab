@@ -9,7 +9,7 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'ang-spells-playground-parent',
+  selector: 'spells-playground-parent',
   templateUrl: './parent.component.html',
   styleUrls: ['./parent.component.scss']
 })

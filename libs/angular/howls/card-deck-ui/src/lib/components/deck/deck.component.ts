@@ -4,7 +4,7 @@ import {map, mergeMap, Observable, reduce, tap, throttleTime} from "rxjs";
 import {DeckApiService} from "../../services/deck-api.service";
 
 @Component({
-  selector: 'angdeck-deck',
+  selector: 'howls-card-deck-ui-deck',
   templateUrl: './deck.component.html',
   styleUrls: ['./deck.component.scss']
 })

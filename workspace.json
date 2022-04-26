@@ -7,6 +7,6 @@
     "angular-angular-lab-e2e": "apps/angular/angular-lab-e2e",
     "angular-spells-playground": "libs/angular/spells/playground",
     "angular-spells-shared": "libs/angular/spells/shared",
-    "angular-spells-card-deck-ui": "libs/angular/howls/card-deck-ui"
+    "angular-howls-card-deck-ui": "libs/angular/howls/card-deck-ui"
   }
 }

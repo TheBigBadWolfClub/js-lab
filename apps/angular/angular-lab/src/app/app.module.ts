@@ -5,8 +5,8 @@ import {AppComponent} from './app.component';
 import {RouterModule} from '@angular/router';
 import {
   ErrorNotImplementedComponent
-} from "@js-lab/ang-lab-common/lib/error-not-implemented/error-not-implemented.component";
-import {AngCardDeckModule} from "@js-lab/ang-card-deck-lib";
+} from "@js-lab/angular-spells-shared/lib/error-not-implemented/error-not-implemented.component";
+import {CardDeckUiModule} from "@js-lab/angular-howls-card-deck-ui";
 
 
 @NgModule({
@@ -22,15 +22,15 @@ import {AngCardDeckModule} from "@js-lab/ang-card-deck-lib";
         children: [
           {
             path: 'deck',
-            loadChildren: () => import('@js-lab/ang-card-deck-lib/lib/ang-card-deck.module')
-              .then(m => m.AngCardDeckModule)
+            loadChildren: () => import('@js-lab/angular-howls-card-deck-ui/lib/card-deck-ui.module')
+              .then(m => m.CardDeckUiModule)
           },
         ]
       },
 
       {path: 'home', component: ErrorNotImplementedComponent},
     ], {initialNavigation: 'enabledBlocking'}),
-    AngCardDeckModule,
+    CardDeckUiModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

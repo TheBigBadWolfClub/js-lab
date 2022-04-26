@@ -1,9 +1,9 @@
 import {Component} from '@angular/core';
 import {DeckApiService} from "../../services/deck-api.service";
-import {LogInDomService} from "@js-lab/ang-lab-common/lib/services/log-in-dom.service";
+import {LogInDomService} from "@js-lab/angular-spells-shared/lib/services/log-in-dom.service";
 
 @Component({
-  selector: 'angdeck-footer',
+  selector: 'howls-card-deck-ui-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss']
 })

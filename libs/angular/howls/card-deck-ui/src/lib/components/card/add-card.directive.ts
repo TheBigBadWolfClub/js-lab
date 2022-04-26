@@ -1,7 +1,7 @@
 import {Directive, ViewContainerRef} from '@angular/core';
 
 @Directive({
-  selector: '[angdeckAddCard]'
+  selector: '[howlsCardDeckUIAddCard]'
 })
 export class AddCardDirective {
 

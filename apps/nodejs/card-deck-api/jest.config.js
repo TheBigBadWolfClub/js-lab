@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'nodejs--card-deck-api',
+  displayName: 'nodejs-card-deck-api',
   preset: '../../../jest.preset.js',
   testEnvironment: 'node',
   transform: {

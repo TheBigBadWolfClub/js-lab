@@ -4,11 +4,11 @@ import {Observable, Subject, tap} from "rxjs";
 import {DeckApiService} from "../../services/deck-api.service";
 import {Card, CLUBS, DIAMONDS, HEARTS, SPADES, suitNames} from "../../deck-model";
 import {CardComponent} from "../card/card.component";
-import {LogInDomService} from "@js-lab/ang-lab-common/lib/services/log-in-dom.service";
+import {LogInDomService} from "@js-lab/angular-spells-shared/lib/services/log-in-dom.service";
 
 
 @Component({
-  selector: 'angdeck-game-table',
+  selector: 'howls-card-deck-ui-game-table',
   templateUrl: './game-table.component.html',
   styleUrls: ['./game-table.component.scss']
 })
@@ -20,7 +20,7 @@ export class GameTableComponent implements OnInit {
   CLUBS = CLUBS
 
 
-  @ViewChild(AddCardDirective, {static: true}) angdeckAddCard!: AddCardDirective;
+  @ViewChild(AddCardDirective, {static: true}) howlsCardDeckUIAddCard!: AddCardDirective;
 
   deck$: Subject<any> = new Subject()
 
@@ -33,7 +33,7 @@ export class GameTableComponent implements OnInit {
   }
 
   loadComponent(card: Card) {
-    const viewContainerRef = this.angdeckAddCard.viewContainerRef;
+    const viewContainerRef = this.howlsCardDeckUIAddCard.viewContainerRef;
     const dynamicComponentFactory = this.componentFactoryResolver.resolveComponentFactory(CardComponent);
     const componentRef = viewContainerRef.createComponent<CardComponent>(dynamicComponentFactory);
     componentRef.instance.card = card;
@@ -77,6 +77,6 @@ export class GameTableComponent implements OnInit {
   }
 
   private resetView() {
-    this.angdeckAddCard.viewContainerRef.clear();
+    this.howlsCardDeckUIAddCard.viewContainerRef.clear();
   }
 }

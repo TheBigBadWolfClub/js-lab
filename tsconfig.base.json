@@ -8,9 +8,9 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "es2015",
+    "target": "es2020",
     "module": "esnext",
-    "lib": ["es2017", "dom"],
+    "lib": ["es2020", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
@@ -18,7 +18,9 @@
       "@js-lab/nodejs/riddles": ["libs/nodejs/riddles/src/index.js"],
       "@js-lab/angular-spells-playground": ["libs/angular/spells/playground/src/index.ts"],
       "@js-lab/angular-spells-shared": ["libs/angular/spells/shared/src/index.ts"],
-      "@js-lab/angular-howls-card-deck-ui": ["libs/angular/howls/card-deck-ui/src/index.ts"]
+      "@js-lab/angular-spells-shared/*": ["libs/angular/spells/shared/src/*"],
+      "@js-lab/angular-howls-card-deck-ui": ["libs/angular/howls/card-deck-ui/src/index.ts"],
+      "@js-lab/angular-howls-card-deck-ui/*": ["libs/angular/howls/card-deck-ui/src/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]

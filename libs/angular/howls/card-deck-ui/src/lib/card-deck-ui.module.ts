@@ -21,7 +21,7 @@ import {CardDeckUiComponent} from './card-deck-ui.component';
 import {HttpClientModule} from "@angular/common/http";
 import {
   ErrorNotImplementedComponent
-} from "@js-lab/ang-lab-common/lib/error-not-implemented/error-not-implemented.component";
+} from "@js-lab/angular-spells-shared/lib/error-not-implemented/error-not-implemented.component";
 
 export const MainRoute = "game"
 @NgModule({

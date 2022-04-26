@@ -12,7 +12,7 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'ang-spells-playground-child',
+  selector: 'spells-playground-child',
   templateUrl: './child.component.html',
   styleUrls: ['./child.component.scss']
 })

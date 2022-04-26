@@ -1,8 +1,8 @@
 import {Component} from '@angular/core';
-import {LogInDomService} from "@js-lab/ang-spells-shared/lib/services/log-in-dom.service";
+import {LogInDomService} from "@js-lab/angular-spells-shared/lib/services/log-in-dom.service";
 
 @Component({
-  selector: 'ang-spells-playground-async-lab',
+  selector: 'spells-playground-async-lab',
   templateUrl: './async-lab.component.html',
   styleUrls: ['./async-lab.component.scss']
 })

@@ -1,8 +1,8 @@
 <div class="deck">
   <div class="sub-deck" *ngFor="let decks of deck$ | async">
-    <angdeck-card fxLayoutAlign="center center"
+    <howls-card-deck-ui-card fxLayoutAlign="center center"
                *ngFor="let card of decks" [card]=card>
 
-    </angdeck-card>
+    </howls-card-deck-ui-card>
   </div>
 </div>

@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 import {MainRoute} from '../../card-deck-ui.module';
 
 @Component({
-  selector: 'angdeck-header-navbar',
+  selector: 'howls-card-deck-ui-header-navbar',
   template: `
     <nav class="game-header__nav" mat-align-tabs="center" mat-tab-nav-bar>
       <a mat-tab-link routerLink="game" routerLinkActive="active-link">Game</a>

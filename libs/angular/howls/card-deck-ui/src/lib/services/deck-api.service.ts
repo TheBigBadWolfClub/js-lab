@@ -2,7 +2,7 @@ import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {concatMap, delay, mergeMap, Observable, of} from "rxjs";
 import {Card, Suit} from "../deck-model";
-import {LogInDomService} from "@js-lab/ang-lab-common/lib/services/log-in-dom.service";
+import {LogInDomService} from "@js-lab/angular-spells-shared/lib/services/log-in-dom.service";
 
 
 export type Options = {
